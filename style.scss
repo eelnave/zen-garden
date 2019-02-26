@@ -1,3 +1,5 @@
-body {
-  height: 100%;
+@media only screen and (max-width: 600px){
+  @import url(partials\_mobile.scss);
 }
+
+@import url(partials\_desktop.scss);
