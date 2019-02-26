@@ -1,3 +1,52 @@
-body {
-  height: 100%;
+$full-width: 100%;
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+    max-width: 600px;
+    height: 100%;
+}
+    
+body{
+    width: 80%;
+    margin: auto;
+}
+    
+header{
+    width: $full-width;
+    text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+div{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sidebar{
+  width: $full-width;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.design-selection{
+  flex: 70%;
+  max-width: 70%;
+}
+
+.design-archives, .zen-resources{
+  flex: 30%;
+  max-width: 30%;
+}
+
+li{
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
