@@ -1,0 +1,33 @@
+<<<<<<< HEAD:scss/style.scss
+@media only screen and (max-width: 600px){
+  @import '/responsive/mobile';
+}
+
+@media only screen and (min-width: 600px){
+  @import '/responsive/desktop';
+}
+
+html{
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@import 'partials/typography';
+=======
+html{
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px){
+  @import 'partials/mobile';
+}
+
+@media only screen and (min-width: 600px){
+  @import 'partials/desktop';
+}
+
+
+>>>>>>> parent of 30f2bc2... folder changes:style.scss
