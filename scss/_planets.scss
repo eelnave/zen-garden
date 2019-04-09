@@ -1,0 +1,29 @@
+@mixin planet($color, $size) {
+   width: $size;
+   height: $size;
+   border-radius: 50%;
+   background-color: $color;
+}
+
+@import 'colors';
+
+@keyframes revolve {
+   0% {bottom: -12%;
+       left: 20%;}
+   25% {transform: scale(1.4);}
+   50% {bottom: 22%;
+        transform: scale(1);
+        left: 30%;}
+   75% {transform: scale(0.7)}
+   100% {bottom: -12%;
+         z-index: -1;
+         left: 20%;}
+}
+
+.benefits:before {
+   content: '';
+   @include planet($gray-blue, 200px);
+   position: absolute;
+   bottom: -80px;
+   animation: revolve 10s infinite linear;
+}
