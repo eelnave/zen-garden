@@ -30,19 +30,11 @@ div{
 
 .sidebar{
   width: $full-width;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
-.design-selection{
-  flex: 70%;
-  max-width: 70%;
-}
 
-.design-archives, .zen-resources{
-  flex: 30%;
-  max-width: 30%;
+ul{
+  padding: 0;
 }
 
 li{
@@ -61,4 +53,3 @@ li{
     flex: 1 0 auto;
   }
 }
-
